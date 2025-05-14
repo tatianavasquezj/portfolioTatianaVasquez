@@ -1,0 +1,180 @@
+.brief-section {
+  padding: 30px 15px;
+  margin-top: 60px;
+}
+
+.brief-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.brief-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #2d3436;
+  line-height: 1.2;
+  margin: 0 auto 1.5rem;
+  font-size: 2.3rem;
+}
+
+.brief-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #636e72;
+  line-height: 1.4;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.form-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #2d3436;
+  margin: 5px 0;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  background-color: #f9f9f9;
+  border: 1px solid #dfe6e9;
+}
+
+.form-input::placeholder {
+  color: #7a7f83;
+}
+
+.form-input:focus {
+  border-color: #2d3436;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+  color: #7a7f83;
+  font-size: 0.95rem;
+}
+
+.radio-option {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submit-button {
+  background-color: #2d3436;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #1a1e1f;
+}
+
+/* Popup Style */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.popup-message {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #636e72;
+  margin: 5px 0;
+}
+
+.popup-info {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  color: #7a7f83;
+  margin: 5px 0 20px;
+}
+
+.close-button {
+  background-color: #2d3436;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #1a1e1f;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .popup-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .popup-title {
+    font-size: 1.5rem;
+  }
+
+  .popup-message, .popup-info {
+    font-size: 1rem;
+  }
+
+  .submit-container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,190 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Botones de filtrado */
+.filter-btn {
+  background-color: transparent;
+  border: 1px solid #2d3436;
+  padding: 8px 18px;
+  margin: 0 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+/* Botón activo */
+.filter-btn.active {
+  background-color: #2d3436;
+  color: white;
+  border: none;
+}
+
+/* Hover */
+.filter-btn:hover {
+  background-color: #2d3436;
+  color: white;
+  border: none;
+}
+
+.gallery-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #2d3436;
+  line-height: 1.2;
+  margin: 0 auto 1.5rem;
+  font-size: 2.3rem;
+}
+
+.gallery-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #636e72;
+  line-height: 1.4;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+/* Estilos de las tarjetas de los proyectos */
+.work-card {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  background-color: white;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+/* Superposición de la imagen con título y descripción */
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.work-card:hover .work-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  max-width: 90%;
+}
+
+.overlay-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.overlay-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* Estilos del botón "Ver" */
+.view-more-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 30px;
+  border: none;
+  padding: 8px 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.view-more-btn:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Estilos para el estado de carga y error */
+.loading-text, .error-text, .no-projects {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #636e72;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 576px) {
+  .work-card {
+    max-width: 100%;
+  }
+
+  .gallery-title {
+    font-size: 1.8rem;
+  }
+
+  .gallery-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Ajuste del filtro de categorías para móvil */
+  .text-center.mb-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 15px;
+  }
+
+  .filter-btn {
+    margin: 0;
+    width: calc(50% - 10px);
+    max-width: 160px;
+    padding: 8px 12px;
+  }
+}

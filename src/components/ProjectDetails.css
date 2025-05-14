@@ -1,0 +1,140 @@
+.project-details-container {
+  max-width: 100%;
+  margin: 5rem auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.project-carousel {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-info {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Carrusel de imágenes */
+.project-image {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Encabezado */
+.project-header {
+  margin-bottom: 1rem;
+}
+
+.project-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #2d3436;
+}
+
+.project-category {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #636e72;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-client {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #2d3436;
+  margin-top: 0.5rem;
+}
+
+/* Descripción */
+.project-description {
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #636e72;
+  margin: 0.2rem 0;
+}
+
+/* Navegación */
+.project-navigation {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-navigation button {
+  padding: 0.6rem 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #2d3436;
+  background-color: #fff;
+  border: 1px solid #2d3436;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.project-navigation button:hover {
+  background-color: #2d3436;
+  color: white;
+}
+
+/* Vista Responsive */
+@media (max-width: 992px) {
+  .project-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-carousel, .project-info {
+    flex: 1 1 100%;
+  }
+
+  .project-header h1 {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .project-navigation button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}

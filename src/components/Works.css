@@ -1,0 +1,140 @@
+.works-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #2d3436;
+  line-height: 1.2;
+  margin: 0 auto 1.5rem;
+  font-size: 2.3rem;
+}
+
+.works-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #636e72;
+  line-height: 1.4;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.filter-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* Estilos de las tarjetas de los proyectos */
+.work-card {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  background-color: white;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+/* Superposición de la imagen con título y descripción */
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.work-card:hover .work-overlay {
+  opacity: 1;
+}
+
+/* Hover de titulo y boton*/
+.overlay-content {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+/* Descripción oculta en hover */
+.overlay-desc {
+  display: none;
+}
+
+.view-more-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #2d3436;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.view-more-btn:hover {
+  background-color: #2d3436;
+  color: #fff;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 576px) {
+  .work-card {
+    max-width: 100%;
+  }
+
+  .works-title {
+    font-size: 1.8rem;
+  }
+
+  .works-subtitle {
+    font-size: 1rem;
+  }
+}

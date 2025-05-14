@@ -1,0 +1,160 @@
+.contact-section {
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.contact-intro {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #636e72;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.success-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.success-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.success-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #636e72;
+}
+
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.compact {
+  flex: 1;
+}
+
+.form-input, 
+.form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #dfe6e9;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus, 
+.form-textarea:focus {
+  border-color: #2d3436;
+  outline: none;
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submit-button {
+  background-color: #2d3436;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.submit-button:hover {
+  background-color: #1a1e1f;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .popup-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .success-title {
+    font-size: 1.5rem;
+  }
+
+  .success-text {
+    font-size: 1rem;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+  }
+  
+  .contact-intro {
+    font-size: 0.9rem;
+  }
+}
