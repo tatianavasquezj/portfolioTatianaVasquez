@@ -16,7 +16,7 @@ const Works = () => {
   const [filter, setFilter] = useState('Diseño de marca');
   const navigate = useNavigate();
 
-  // API Proyectos segun la categoria
+  // API Proyectos según la categoría
   useEffect(() => {
     const fetchProjects = async () => {
       try {
@@ -37,6 +37,11 @@ const Works = () => {
     navigate(`/works/${projectId}`);
   };
 
+  // Redirección a la galería al hacer clic en "Todos"
+  const handleAllClick = () => {
+    navigate('/gallery');
+  };
+
   return (
     <section id="Works" className="py-5 bg-light">
       <div className="container">
@@ -51,7 +56,7 @@ const Works = () => {
             <button
               key={category}
               className={`btn btn-outline-dark ${filter === category ? 'active' : ''} filter-btn`}
-              onClick={() => setFilter(category)}
+              onClick={category === 'Todos' ? handleAllClick : () => setFilter(category)}
             >
               {category}
             </button>
