@@ -115,7 +115,7 @@
 }
 
 .submit-button {
-  background-color: #2d3436;
+  background-color: #000000;
   color: white;
   padding: 12px 30px;
   border: none;
@@ -123,12 +123,13 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 
 }
 
 .submit-button:hover {
-  background-color: #1a1e1f;
+  background-color: #333;
+  transform: translateY(-3px);
 }
 
 @media (max-width: 600px) {

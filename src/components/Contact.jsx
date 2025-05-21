@@ -70,7 +70,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 className="form-textarea"
-                placeholder="Mensaje"
+                placeholder="Cuéntame qué necesitas y te responderé pronto."
                 required
               ></textarea>
             </div>
