@@ -50,7 +50,7 @@ const Gallery = () => {
       <div className="container">
         <h2 className="gallery-title mt-4 mb-4 text-center">Mis trabajos</h2>
         <p className="gallery-subtitle text-center text-muted mb-4">
-          Explora todos los proyectos, desde el diseño de marcas hasta experiencias únicas.
+          Una selección de proyectos realizados en diferentes áreas del diseño, adaptados a diversas necesidades y objetivos.
         </p>
 
         {/* Filtro de categorías */}
