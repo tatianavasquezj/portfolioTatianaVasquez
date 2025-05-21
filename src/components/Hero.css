@@ -83,7 +83,7 @@
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 2; /* Opcional */
+  z-index: 2;
 }
 
 .hero-button:hover {
