@@ -34,8 +34,7 @@ const BriefForm = () => {
       <div className="brief-container">
         <h2 className="brief-title">Brief</h2>
         <p className="brief-subtitle">
-          Construyamos algo único. Cada marca merece una estrategia visual alineada a su esencia. 
-          Completa el brief y demos forma a tu concepto.
+          Construyamos algo único. Un brief creativo es la clave para definir los detalles esenciales de tu proyecto: qué necesitas, para quién es y qué quieres comunicar. Al completar el brief, trazamos el camino para una solución precisa y adaptada a tu visión. Demos forma a tu concepto.
         </p>
         <form onSubmit={handleSubmit} className="brief-form">
           <div className="form-row">
@@ -53,9 +52,9 @@ const BriefForm = () => {
             ))}
           </div>
           <label className="form-label">Objetivo del proyecto:</label>
-          <input type="text" name="projectObjective" placeholder="Objetivo del proyecto" value={formData.projectObjective} onChange={handleChange} className="form-input" required />
+          <input type="text" name="projectObjective" placeholder="Mejorar la imagen de marca, aumentar conversiones, entre otros..." value={formData.projectObjective} onChange={handleChange} className="form-input" required />
           <label className="form-label">Público objetivo:</label>
-          <input type="text" name="targetAudience" placeholder="Público objetivo" value={formData.targetAudience} onChange={handleChange} className="form-input" required />
+          <input type="text" name="targetAudience" placeholder="Edad, intereses y necesidades de tu público objetivo..." value={formData.targetAudience} onChange={handleChange} className="form-input" required />
           <div className="form-row">
             <input type="text" name="estimatedDate" placeholder="Fecha estimada" value={formData.estimatedDate} onChange={handleChange} className="form-input" required />
             <input type="text" name="estimatedBudget" placeholder="Presupuesto estimado" value={formData.estimatedBudget} onChange={handleChange} className="form-input" required />
